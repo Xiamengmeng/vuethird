@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
+
+import Cart from "../components/tabbar/cart"
+import Market from "../components/tabbar/market"
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      component:Cart
+    },
+    {
+      path:"/market",
+      component:Market
     }
   ]
 })
